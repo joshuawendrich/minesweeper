@@ -20,6 +20,12 @@ const countAdjacentMines = (x, y, state) => {
 
 const loseGame = (state) => {
   setGameState('You Lose');
+  state.cellState.forEach((row) => {
+    row.forEach((cell) => {
+      cell.element.classList.remove('marked');
+      if (cell.isMine) cell.element.style.backgroundColor = 'red';
+    });
+  });
   endGame(state);
 };
 
