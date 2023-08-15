@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  display: none;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.board {
+  width: 60vw;
+  height: 60vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5%;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+  gap: 0.5%;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  flex: 1;
+  background-color: grey;
+}
+
+.cell.marked {
+  background-color: yellow;
+}
