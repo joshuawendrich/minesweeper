@@ -1,4 +1,4 @@
-import * as Helpers from './helpers';
+import * as Helpers from './helpers.js';
 
 const createRandomPosition = (boardWidth) => {
   return Math.floor(Math.random() * boardWidth);
